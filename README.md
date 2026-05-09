@@ -24,7 +24,6 @@ simulate outages, monitor health, and auto-destroy environments on TTL expiry.
 └───────────┼──────────────────────────────────────────────┘
 │
 Browser / curl
-
 ## Prerequisites
 
 - Linux VM (Ubuntu 20.04+)
