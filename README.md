@@ -4,8 +4,7 @@ A self-service platform to spin up isolated temporary app environments,
 simulate outages, monitor health, and auto-destroy environments on TTL expiry.
 
 ## Architecture
-three backticks
-
+```
 ┌─────────────────────────────────────────────────────────┐
 │                        HOST VM                          │
 │  ┌──────────┐  ┌─────────────┐  ┌──────────────────┐   │
@@ -21,9 +20,9 @@ three backticks
 │  ║  └─────┬─────┘  └──────────┘  └──────────┘     ║    │
 │  ╚════════╪═════════════════════════════════════════╝    │
 └───────────┼──────────────────────────────────────────────┘
-│
-Browser / curl
-three more backticks
+            │
+       Browser / curl
+```
 ## Prerequisites
 
 - Linux VM (Ubuntu 20.04+)
