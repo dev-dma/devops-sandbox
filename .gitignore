@@ -1,0 +1,10 @@
+logs/
+envs/
+nginx/conf.d/*.conf
+.env
+*.pid
+__pycache__/
+*.pyc
+.daemon.pid
+.monitor.pid
+.api.pid
