@@ -4,15 +4,15 @@ A self-service platform to spin up isolated temporary app environments,
 simulate outages, monitor health, and auto-destroy environments on TTL expiry.
 
 ## Architecture
+three backticks
+
 ┌─────────────────────────────────────────────────────────┐
 │                        HOST VM                          │
 │  ┌──────────┐  ┌─────────────┐  ┌──────────────────┐   │
 │  │ Control  │  │   Cleanup   │  │  Health Poller   │   │
-│  │  API     │  │   Daemon    │  │  (monitor/)      │   │
-│  │ :5000    │  │ (60s loop)  │  │  (30s loop)      │   │
+│  │  API     │  │ (60s loop)  │  │  (30s loop)      │   │
 │  └────┬─────┘  └──────┬──────┘  └────────┬─────────┘   │
 │       └───────────────┼──────────────────┘              │
-│                       │  calls bash scripts              │
 │  ╔════════════════════╪═════════════════════════════╗    │
 │  ║      Docker (sandbox-main network)               ║    │
 │  ║  ┌───────────┐  ┌──────────┐  ┌──────────┐     ║    │
@@ -20,10 +20,10 @@ simulate outages, monitor health, and auto-destroy environments on TTL expiry.
 │  ║  │   :80     │  │  :3000   │  │  :3000   │     ║    │
 │  ║  └─────┬─────┘  └──────────┘  └──────────┘     ║    │
 │  ╚════════╪═════════════════════════════════════════╝    │
-│           │ port 80                                      │
 └───────────┼──────────────────────────────────────────────┘
 │
 Browser / curl
+three more backticks
 ## Prerequisites
 
 - Linux VM (Ubuntu 20.04+)
