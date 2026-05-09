@@ -1,4 +1,4 @@
-cat > README.md << 'EOF'
+
 # DevOps Sandbox Platform
 
 A self-service platform to spin up isolated temporary app environments,
